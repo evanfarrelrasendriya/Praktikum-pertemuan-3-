@@ -1,0 +1,58 @@
+<!-- 
+ Nama: Evan farrel Rasendriya
+ NIM: 252520077
+ kelas:A
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Mahasiswa</title>
+    <style>
+        body { font-family: Arial; background: #fffdf0; }
+        h1 { color: #1a56b0;text-align: center; }
+        h2 { color: #1a56b0; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background: #1a56b0;color: white; padding: 8px; }
+        td {border: 1px solid #facc15; padding: 8px; }
+        .kuning-aksen { background: #fef08a; }
+    </style>
+</head>
+<body>
+
+<h1>Data Mahasiswa</h1>
+    <h2>Form Input Mahasiswa</h2>
+    <form action="proses.php" method="post">
+    <!--Elemen 1: Text-->
+        Nama: <input type="text" name="nama"><br><br>
+    <!-- Elemen 2: Email -->
+        Email: <input type="email" name="email"><br><br>
+    <!-- Elemen 3: Radio-->
+     Jenis Kelamin:
+     <input type="radio" name="jk" value="L"> Laki-laki
+     <input type="radio" name="jk" value="p"> Perempuan<br><br>
+    <!-- Elemen 4: select-->
+     Prodi:
+     <select name="prodi">
+        <option>Teknologi Informasi</option>
+        <option>Pendidikan Bahasa dan Sastra Indonesia</option>
+        <option>Pendidikan Bahasa dan Sastra Jawa</option>
+        <option>Pendidikan Ekonomi</option>
+        <option>Pendidikan Bahasa Inggris</option>
+        <option>Pendidikan Matematika</option>
+        <option>Pendidikan Teknik Otomotif</option>
+        <option>Pendidikan Guru Sekolah Dasar</option>
+        <option>Teknik Sipil</option>
+        <option>Agribisnis</option>
+        <option>Manajemen</option>
+        <option>Peternakan</option>
+        <option>Psikologi</option>
+        <option>Hukum</option>
+     </select><br><br>
+    <!-- Elemen 5:Textarea-->
+        Alamat: <br>
+        <textarea name="alamat" rows="3"></textarea><br><br>
+        
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
